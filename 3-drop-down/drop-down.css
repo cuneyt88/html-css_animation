@@ -1,0 +1,32 @@
+/******* DROP-DOWN ANIMATION *******/
+
+.card{
+    background-color: lightgray;
+    padding: 1rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    animation: dropdown 4s ease-in-out forwards;
+}
+
+.card button{
+    border: none;
+    padding: 1rem;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    width: 7rem;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: rgb(135, 11, 11);
+}
+
+@keyframes dropdown {
+    0%{
+        
+    }
+
+}

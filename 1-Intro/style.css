@@ -1,0 +1,49 @@
+/******* ANIMATION INTRO *******/
+.outer{
+    background-color: blueviolet;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.inner{
+    background-color: cadetblue;
+    width: 50%;
+    height: 50%;
+    transition: transform 1s ease-in-out, background-color 1s;
+}
+
+.outer:hover .inner{
+    /* background-color: chartreuse;
+    transform: translateX(100%); */
+
+    animation: travel 2s ease-in-out 0.5s 2 alternate forwards;
+    /* animation-iteration-count: 2; */
+
+    /*?animasyonun baslangıc yonu*/
+    /* animation-direction: alternate; */
+
+    /*?animasyon doldurma modu*/
+    animation-fill-mode: forwards; /* animasyon son frame de biter*/
+}
+
+@keyframes travel{
+    /*! baslangıc konumu */
+    0%{
+        transform: translateX(0);
+    }
+
+    /*!baslangıca gore 100 birim asagı yonu*/
+    33%{
+        transform: translateY(100%);
+    }
+
+    /*!baslangıca gore 100 birim asagı vas sag yonu*/
+    66%{
+        transform: translate(100%, 100%);
+    }
+
+    100%{
+        transform: translateX(100%);
+    }
+}
